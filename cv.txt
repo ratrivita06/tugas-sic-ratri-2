@@ -1,0 +1,4 @@
+"Ini adalah file CV"
+1.MajuHardware
+2.Matahari
+3.Bank
