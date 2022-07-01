@@ -1,0 +1,73 @@
+Microsoft Windows [Version 10.0.19042.685]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\Admin\Downloads\tugas sic - ratrii>cd "git basic"
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git init
+Initialized empty Git repository in C:/Users/Admin/Downloads/tugas sic - ratrii/git basic/.git/
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git add .
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git commit -m "adding first.txt"
+[master (root-commit) a95d365] adding first.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 first.txt.txt
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>echo>second.txt
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git add .
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   second.txt
+
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git commit -m "adding second.txt"
+[master 3b6bb16] adding second.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 second.txt
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git add .
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git add .
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    first.txt.txt
+
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git commit -m "removing first.txt"
+[master 66f9714] removing first.txt
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 first.txt.txt
+
+C:\Users\Admin\Downloads\tugas sic - ratrii\git basic>git log
+commit 66f9714384683b8057a6569b85034b5f2d73db2b (HEAD -> master)
+Author: ratrivita06 <ratrivita999@gmail.com>
+Date:   Thu Jun 30 12:16:08 2022 +0700
+
+    removing first.txt
+
+commit 3b6bb167e69ae4a587096c4793091f61930cb066
+Author: ratrivita06 <ratrivita999@gmail.com>
+Date:   Thu Jun 30 12:14:22 2022 +0700
+
+    adding second.txt
+
+commit a95d36524ef281dcd383842cbef92193821b741e
+Author: ratrivita06 <ratrivita999@gmail.com>
+Date:   Thu Jun 30 12:13:24 2022 +0700
+
+    adding first.txt
